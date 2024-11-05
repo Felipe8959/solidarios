@@ -1,0 +1,92 @@
+body {
+    scroll-behavior: smooth;
+}
+
+#home {
+    position: relative;
+    height: 100vh;
+    background: url('imagens/image1.jpg') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+#home .container {
+    position: relative;
+    z-index: 2;
+}
+
+#home h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#home p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.btn-primary,
+.btn-success {
+    background-color: darkorange;
+    border-color: darkorange;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: darkorange;
+    border-color: darkorange;
+}
+
+
+/* Barra de Navegação */
+.navbar {
+    background-color: #000;
+    transition: background-color 0.5s;
+    padding: 0.1rem 1rem;
+}
+
+.navbar.scrolled {
+    background-color: rgba(30, 30, 30, 0.9);
+}
+
+
+.navbar-brand img {
+    height: 50px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Efeitos de Animação */
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#doacoes {
+    background-color: #f8f9fa;
+}
+
+#contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}

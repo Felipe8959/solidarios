@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoclube Solidários</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="imagens/logo.jpg" alt="Logo Solidários">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#eventos">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#doacoes">Doações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="d-flex align-items-center" style="height: 100vh; background: url('imagens/image1.jpg') center center/cover no-repeat;">
+        <div class="container text-center text-white">
+            <h1 class="display-4 animate">Bem-vindo ao Motoclube Solidários</h1>
+            <p class="lead animate">Unindo paixão por motos e solidariedade</p>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 animate">
+                    <img src="imagens/sobre.jpg" class="img-fluid rounded" alt="Sobre">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4 animate">Sobre Nós</h2>
+                    <p class="animate">O Motoclube Solidários é uma comunidade apaixonada por motocicletas que busca promover a solidariedade e o apoio mútuo entre seus membros e a comunidade em geral. Organizamos eventos, passeios e ações sociais para fortalecer os laços e ajudar aqueles que mais precisam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 animate">Próximos Eventos</h2>
+            <div class="row">
+                <!-- Aniversário -->
+                <div class="col-md-4 animate">
+                    <div class="card mb-4">
+                        <img src="imagens/evento.jpg" class="card-img-top" alt="Evento 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Convite especial</h5>
+                            <p class="card-text">Venha comemorar o primeiro aniversário do motoclube.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Evento 2 -->
+                <div class="col-md-4 animate">
+                    <div class="card mb-4">
+                        <img src="imagens/image2.jpg" class="card-img-top" alt="Evento 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Evento solidário</h5>
+                            <p class="card-text">Um encontro para compartilhar experiências e promover união.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Evento 3 -->
+                <div class="col-md-4 animate">
+                    <div class="card mb-4">
+                        <img src="imagens/image1.jpg" class="card-img-top" alt="Evento 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Campanha de Doação</h5>
+                            <p class="card-text">Campanha para arrecadar alimentos e roupas para famílias necessitadas.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doações -->
+    <section id="doacoes">
+        <div class="container">
+            <h2 class="text-center mb-5 animate">Faça uma Doação</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 animate">
+                    <div class="card p-4">
+                        <h5 class="card-title text-center mb-4">Apoie Nosso Motoclube</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="donationAmount" class="form-label">Valor da Doação</label>
+                                <input type="number" class="form-control" id="donationAmount" placeholder="R$ 0,00">
+                            </div>
+                            <div class="mb-3">
+                                <label for="donorName" class="form-label">Seu Nome</label>
+                                <input type="text" class="form-control" id="donorName" placeholder="Seu Nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="donorEmail" class="form-label">Seu E-mail</label>
+                                <input type="email" class="form-control" id="donorEmail" placeholder="email@exemplo.com">
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Doar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 animate">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 animate">
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="email@exemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" placeholder="Sua mensagem..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="text-center py-4 bg-dark text-white">
+        &copy; 2024 Solidários M.C. Todos os direitos reservados.
+    </footer>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
