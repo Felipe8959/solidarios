@@ -40,3 +40,26 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
         });
     });
 });
+
+
+
+function sendEmail() {
+    const name = document.getElementById('contactName').value;
+    const email = document.getElementById('contactEmail').value;
+    const message = document.getElementById('contactMessage').value;
+
+    // Validando se todos os campos foram preenchidos
+    if (!name || !email || !message) {
+        alert('Por favor, preencha todos os campos antes de enviar!');
+        return;
+    }
+
+    // Criando o link mailto com os dados
+    const subject = encodeURIComponent('Contato do site Solidários');
+    const body = encodeURIComponent(
+        `${message}`
+    );
+    const mailtoLink = `mailto:felipe.santos@hotmail.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
+}

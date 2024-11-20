@@ -21,6 +21,19 @@ body {
     z-index: 1;
 }
 
+.logo-centralizada {
+    max-width: 100%;
+    height: auto;
+    background-color: transparent; /* Remove fundo */
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#home {
+    background-color: #ffffff; /* Define fundo branco */
+}
+
+
 #home .container {
     position: relative;
     z-index: 2;
@@ -89,4 +102,26 @@ section {
 #contato form {
     max-width: 600px;
     margin: 0 auto;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-logo {
+    animation: float 4s infinite ease-in-out;
+}
+
+.img-effect {
+    transition: filter 0.5s ease;
+    filter: brightness(0.8);
+}
+
+.img-effect:hover {
+    filter: brightness(1);
 }
