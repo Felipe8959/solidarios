@@ -1,4 +1,4 @@
-# Site Solidários
+# Solidários
 
 Este repositório contém o código-fonte de um site desenvolvido como parte de um projeto semestral da UNINOVE, com o objetivo de promover e divulgar iniciativas de solidariedade, focado em eventos, informações e contato com o público.
 
