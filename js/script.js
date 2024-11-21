@@ -59,7 +59,7 @@ function sendEmail() {
     const body = encodeURIComponent(
         `${message}`
     );
-    const mailtoLink = `mailto:felipe.santos@hotmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:solidarios.rc@gmail.com?subject=${subject}&body=${body}`;
 
     window.location.href = mailtoLink;
 }
