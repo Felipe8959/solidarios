@@ -67,16 +67,16 @@ body {
 .navbar {
     background-color: #000;
     transition: background-color 0.5s;
-    padding: 0.1rem 1rem;
+    padding: 0.3rem 3rem;
 }
 
 .navbar.scrolled {
     background-color: rgba(30, 30, 30, 0.9);
 }
 
-
 .navbar-brand img {
-    height: 50px;
+    height: 25px;
+    padding-bottom: 4px;
 }
 
 section {
@@ -124,4 +124,21 @@ section {
 
 .img-effect:hover {
     filter: brightness(1);
+}
+
+.card img {
+    height: 400px; /* Define uma altura padrão */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
+    width: 100%; /* Garante que a largura preencha o card */
+}
+.card {
+    height: 100%; /* Faz com que todos os cards tenham a mesma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+}
+
+.row {
+    row-gap: 25px; /* Espaçamento vertical entre os cards */
 }
