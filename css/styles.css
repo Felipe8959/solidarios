@@ -67,7 +67,7 @@ body {
 .navbar {
     background-color: #000;
     transition: background-color 0.5s;
-    padding: 0.3rem 3rem;
+    padding: 0.4rem 4rem;
 }
 
 .navbar.scrolled {
@@ -141,4 +141,36 @@ section {
 
 .row {
     row-gap: 25px; /* Espaçamento vertical entre os cards */
+}
+
+/* Botão do WhatsApp */
+#whatsapp-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #111111;
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+#whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background-color: #25D366;
+    color: white;
+}
+
+/* Ícone */
+#whatsapp-button i {
+    font-size: 30px;
 }
